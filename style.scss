@@ -47,3 +47,12 @@
         }
     }
 }
+
+.phrase {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 410px;
+    margin-left: 25px;
+    .author {
+        text-align: right;
+    }
+}
