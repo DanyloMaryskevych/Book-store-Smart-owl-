@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(126, 184, 166);
+    img {
+        cursor: pointer;
+        height: 90%;
+        width: auto;
+    }
+    .name {
+        text-align: center;
+        h3,
+        h1 {
+            margin: 10px 0 0 0;
+        }
+        h1 {
+            font-family: 'Dancing Script';
+            font-size: 2.6rem;
+        }
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+        align-items: center;
+        .icon {
+            cursor: pointer;
+            height: 40%;
+            width: auto;
+            border-radius: 15px 15px 15px 15px;
+            opacity: 0.6;
+            transition: 0.3s;
+            img {
+                height: 100%;
+                border-radius: 15px 15px 15px 15px;
+            }
+        }
+        .icon:hover {
+            opacity: 1;
+            box-shadow: 4px 4px 12px 0px rgba(56,49,56,1);
+        }
+    }
+}
