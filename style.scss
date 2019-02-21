@@ -48,13 +48,28 @@
     }
 }
 
-.phrase {
-    font-family: Arial, Helvetica, sans-serif;
-    width: 410px;
-    margin: 10px 0 0 25px;
-    border: 5px rgb(238, 193, 137);
-    border-style: solid none;
-    .author {
-        text-align: right;
+.phrase_basket {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .phrase {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 410px;
+        margin-left: 25px;
+        border: 5px rgb(238, 193, 137);
+        border-style: solid none;
+        .author {
+            text-align: right;
+        }
+    }
+    .basket {
+        align-self: center;
+        margin-right: 30px;
+        img {
+        height: 50px;
+        width: auto;
+        }
+
     }
 }
