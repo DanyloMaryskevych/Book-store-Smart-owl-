@@ -86,15 +86,48 @@
     .book {
         text-align: center;
         transition: 0.4s;
-        img {
-            width: 80%;
-            height: auto;
+        .book_img {
             padding: 10px;
             transition: 0.5s;
+        }
+        .book_img:hover {
+            transform: scale(1.08);
+        }
+        .myButton {
+            background-color:#64836d;
+            border-radius:28px;
+            border:1px solid #193120;
+            display:block;
+            width: 80%;
+            margin: 5px auto;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:17px;
+            padding: 6px 10px;
+            text-decoration: none;
+            text-shadow:0px 1px 0px #2f6627;
+        }
+        .myButton:hover {
+            background-color:#95c2a2;
+        }
+        .myButton:active {
+            position:relative;
+            top:1.5px;
         }
     }
     .book:hover {
         box-shadow: 6px 6px 12px 3px rgba(56,49,56,1);
         background-color: azure;
     }
+}
+
+
+
+
+.basket_img {
+    height: 20px;
+    width: auto;
+    padding-right: 6px;
+    vertical-align: middle;
 }
