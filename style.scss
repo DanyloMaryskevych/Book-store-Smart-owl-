@@ -63,14 +63,17 @@
             text-align: right;
         }
     }
-    .basket {
-        align-self: center;
-        margin-right: 30px;
-        img {
-        height: 50px;
-        width: auto;
-        }
+}
 
+.basket {
+    position: fixed;
+    cursor: pointer;
+    top: 510px;
+    right: 30px;
+    z-index: 1;
+    img {
+    height: 70px;
+    width: auto;
     }
 }
 
