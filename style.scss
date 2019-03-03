@@ -118,6 +118,15 @@
             position:relative;
             top:1.5px;
         }
+        .basket_img {
+            height: 20px;
+            width: auto;
+            padding-right: 6px;
+            vertical-align: middle;
+        }
+        button:focus {
+            outline: none;
+        }
     }
     .book:hover {
         box-shadow: 6px 6px 12px 3px rgba(56,49,56,1);
@@ -125,12 +134,20 @@
     }
 }
 
+.zoom {
+    position: fixed;
+    top: 390px;
+    right: 35px;
+    width: 60px;
+    height: auto;
+    animation: zoom 1.5s ease-out forwards;
+    z-index: 2;
+  }
 
-
-
-.basket_img {
-    height: 20px;
-    width: auto;
-    padding-right: 6px;
-    vertical-align: middle;
+@keyframes zoom {
+    0%{opacity: 0;}
+    50%{opacity: 1;
+        }
+    100%{opacity: 0;
+        transform: translateY(90px) scale(0.5)}
 }
