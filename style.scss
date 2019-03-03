@@ -89,6 +89,7 @@
     .book {
         text-align: center;
         transition: 0.4s;
+        min-height: 320px;
         .book_img {
             padding: 10px;
             transition: 0.5s;
@@ -118,15 +119,17 @@
             position:relative;
             top:1.5px;
         }
+        button:focus {
+            outline: none;
+        }
+
         .basket_img {
             height: 20px;
             width: auto;
             padding-right: 6px;
             vertical-align: middle;
         }
-        button:focus {
-            outline: none;
-        }
+
     }
     .book:hover {
         box-shadow: 6px 6px 12px 3px rgba(56,49,56,1);
@@ -150,4 +153,24 @@
         }
     100%{opacity: 0;
         transform: translateY(90px) scale(0.5)}
+}
+
+.check_mark {
+    display: none;
+    margin: 10px auto;
+    border: solid green;
+    width: 12px;
+    height: 24px;
+    transform: rotate(45deg);
+    border-width: 0 5px 4px 0;
+    animation: check_mark 1.5s ease-out forwards;
+}
+
+@keyframes check_mark {
+    0%{transform: rotate(45deg) scale(0.2);
+        opacity: 0}
+    50%{transform: rotate(45deg) scale(1.8);
+        opacity: 0.5}
+    100%{transform: rotate(45deg) scale(1.25);
+        opacity: 1}
 }
