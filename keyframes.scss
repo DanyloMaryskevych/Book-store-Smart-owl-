@@ -1,0 +1,16 @@
+@keyframes zoom {
+    0%{opacity: 0;}
+    50%{opacity: 1;
+        }
+    100%{opacity: 0;
+        transform: translateY(90px) scale(0.5)}
+}
+
+@keyframes check_mark {
+    0%{transform: rotate(45deg) scale(0.2);
+        opacity: 0}
+    50%{transform: rotate(45deg) scale(1.8);
+        opacity: 0.5}
+    100%{transform: rotate(45deg) scale(1.25);
+        opacity: 1}
+}
