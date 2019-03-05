@@ -14,3 +14,8 @@
     100%{transform: rotate(45deg) scale(1.25);
         opacity: 1}
 }
+
+@keyframes modalopen {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,4 +1,6 @@
-$('button').click(function() {
+// 'Add to button' events
+
+$('div > div > button').click(function() {
     $(this)
         .slideUp(500)
         .closest('div')
@@ -13,6 +15,25 @@ $('button').click(function() {
     }, 1500);
 })
 
-$('button').click(function() {
+$('div > div > button').click(function() {
     $(this).next().slideDown(500)
+})
+
+$('div > div > button').click(function() {
+    $(this)
+        .closest('div')
+        .find('a > img')
+        .clone()
+        .addClass('basket_book')
+        .appendTo('.basket_grid');
+})
+
+// 'Basket' event
+
+$('.basket').click(function() {
+    $('.basket_modal').css('display', 'block')
+})
+
+$('.closeBtn').click(function() {
+    $('.basket_modal').css('display', 'none')
 })
